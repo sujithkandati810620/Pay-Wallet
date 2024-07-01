@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>login</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/aset1/img/favicon.png" rel="icon">
+  <link href="../static/aset1/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/aset1/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/aset1/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/aset1/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/aset1/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/aset1/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/aset1/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/aset1/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:vishnusaikandati@gmail.com">vishnusaikandati@gmail.com</a></i>
+      </div>
+      
+    </div>
+  </section><!-- End Top Bar-->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div id="logo">
+        <h1><a href="/logged_in">PAY<span>WALLET</span></a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/logged_in">Home</a></li>
+          <li><a class="nav-link scrollto" href="/profileshow">Profile</a></li>
+          <li><a class="nav-link scrollto" href="/logout">Logout</a></li>
+          </li>
+          
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+    {% if message %}
+    <div id="messageAlert" class="alert alert-warning" role="alert">
+      {{ message }}
+    </div>
+    {% endif %}
+  <section id="hero">
+
+    <div class="hero-content" data-aos="fade-up">
+      <h2>Welcome Back!</h2>
+  <form action="/login" method="POST">
+    <div class="form-group">
+      <input type="text" class="form-input" name="email" placeholder="Username" required>
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-input" name="password" placeholder="Password" required>
+    </div>
+    <button type="submit" class="btn-login">Log In</button>
+  </form>
+  <div class="login-options">
+    <a href="register.html">Sign Up</a>
+  </div>
+            </div>
+    <div class="hero-slider swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('../static/aset1/img/hero-carousel/1.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../static/aset1/img/hero-carousel/2.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../static/aset1/img/hero-carousel/3.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../static/aset1/img/hero-carousel/4.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../static/aset1/img/hero-carousel/5.jpg');"></div>
+      </div>
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/aset1/vendor/aos/aos.js"></script>
+  <script src="../static/aset1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/aset1/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/aset1/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/aset1/vendor/php-email-form/validate.js"></script>
+  <script src="../static/aset1/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../static/aset1/js/main.js"></script>
+<!-- Template Main JS File -->
+<script src="../static/aset1/js/main.js"></script>
+<script>
+window.onload = function() {
+  setTimeout(function() {
+    var messageElement = document.getElementById('messageAlert');
+    if (messageElement) {
+      messageElement.style.display = 'none';
+    }
+  }, 2000);
+};
+</script>
+</body>
+
+</html>
+
+
+  <!-- File -->
